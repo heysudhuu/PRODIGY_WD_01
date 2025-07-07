@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  /* Advanced, animated, multi-color gradient with overlays */
+  background: 
+    radial-gradient(circle at 80% 20%, #fbbf24 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, #38bdf8 0%, transparent 40%),
+    linear-gradient(120deg, #f8fafc 0%, #e0e7ff 30%, #a5b4fc 60%, #f472b6 100%);
+  background-size: 400% 400%, 400% 400%, 400% 400%;
+  animation: gradientBG 18s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%, 100% 50%, 0% 50%;
+  }
+  33% {
+    background-position: 100% 0%, 0% 100%, 100% 50%;
+  }
+  66% {
+    background-position: 50% 100%, 50% 0%, 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%, 100% 50%, 0% 50%;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #222 60%, #4f8cff 100%);
+  padding: 15px 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+header.scrolled {
+  background: linear-gradient(90deg, #0077cc 60%, #00c6fb 100%);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s;
+  border-radius: 6px;
+}
+
+.nav-menu li a:hover {
+  background: linear-gradient(90deg, #fff 60%, #e0e7ff 100%);
+  color: #0077cc;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.15);
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, #4f8cff 0%, #6ee7b7 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.content {
+  min-height: 200vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #f4f4f4 60%, #e0e7ff 100%);
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+/* Responsive nav for mobile */
+@media (max-width: 600px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero {
+    padding-top: 120px;
+  }
+}
