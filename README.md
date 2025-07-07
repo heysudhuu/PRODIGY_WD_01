@@ -17,13 +17,8 @@ Created a responsive landing page with a fixed navigation bar. The navbar dynami
 - Clean UI/UX
 
 ### 📸 Preview:
-![Screenshot](assets/preview.png) *(Add screenshot of your project)*
+![Responsive Landing Page Preview](msedge_EqLgos8V4C.png)
 
-### 📽️ Demo Video:
-[Click here to watch](#) *(Add YouTube or local link)*
-
-### 🔗 Deployed Link:
-[Live Website](#) *(Optional: Add if hosted on GitHub Pages or Netlify)*
 
 ---
 
